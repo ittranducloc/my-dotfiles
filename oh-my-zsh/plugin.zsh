@@ -1,0 +1,16 @@
+plugins=(
+zsh-syntax-highlighting
+history-substring-search
+zsh-autosuggestions
+zsh-completions
+fancy-ctrl-z
+common-aliases
+ubuntu
+z
+cp
+command-not-found
+last-working-dir
+ubuntu
+git
+docker
+)
