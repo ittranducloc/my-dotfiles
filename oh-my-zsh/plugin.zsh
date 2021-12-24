@@ -3,6 +3,7 @@ zsh-syntax-highlighting
 history-substring-search
 zsh-autosuggestions
 zsh-completions
+fzf-zsh-completions
 fancy-ctrl-z
 common-aliases
 ubuntu
