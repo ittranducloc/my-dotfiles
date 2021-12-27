@@ -1,2 +1,2 @@
 alias ezsh='vi ~/.zshrc'
-alias szsh='source ~/.zshrc'
+alias rzsh='source ~/.zshrc'
