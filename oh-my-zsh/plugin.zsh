@@ -14,4 +14,5 @@ last-working-dir
 ubuntu
 git
 docker
+ripgrep
 )
