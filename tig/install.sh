@@ -1,4 +1,4 @@
-echo 'Install tig'
+echo '=========Install tig'
 
 echo 'Install requirement'
 apt-get install -y make gcc libncurses-dev
