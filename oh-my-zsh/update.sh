@@ -20,4 +20,4 @@ echo 'update spaceship theme'
 cd "$HOME/.oh-my-zsh/custom/themes/spaceship-prompt"
 git pull
 
-cd "$CURRENT_PATH"
+cd "$CURRENT_PATH" 2>&1 > /dev/null
