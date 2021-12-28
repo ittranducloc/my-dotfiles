@@ -15,4 +15,5 @@ ubuntu
 git
 docker
 ripgrep
+asdf
 )
