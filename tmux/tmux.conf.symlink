@@ -1,0 +1,79 @@
+# Reference
+# https://github.com/tmux/tmux/blob/master/example_tmux.conf
+
+# Some tweaks to the status line
+set -g status-right "%H:%M"
+set -g window-status-current-style "underscore"
+set -g mode-keys vi
+
+# If running inside tmux ($TMUX is set), then change the status line to red
+%if #{TMUX}
+set -g status-bg red
+%endif
+
+# reload config file
+bind r source-file ~/.tmux.conf
+
+# Change the default $TERM to xterm-256color
+set -g default-terminal "xterm-256color"
+
+# No bells at all
+set -g bell-action none
+
+# Change the prefix key to C-a
+set -g prefix C-a
+unbind C-b
+bind C-a send-prefix
+
+# Turn the mouse on, but without copy mode dragging
+set -g mouse on
+#unbind -n MouseDrag1Pane
+#unbind -Tcopy-mode MouseDrag1Pane
+
+# split panes using \ and -, make sure they open in the same path
+bind '\' split-window -h -c "#{pane_current_path}"
+bind - split-window -v -c "#{pane_current_path}"
+unbind '"'
+unbind %
+
+# open new windows in the current path
+bind c new-window -c "#{pane_current_path}"
+
+# start with window 1 (instead of 0)
+set -g base-index 1
+
+# start with pane 1
+set -g pane-base-index 1
+
+# vim-bindings for copying into tmux buffer
+bind-key -T copy-mode-vi v send-keys -X begin-selection
+bind-key -T copy-mode-vi y send-keys -X copy-selection-and-cancel
+bind-key -T copy-mode-vi Y send-keys -X copy-pipe-and-cancel 'xclip -in -selection clipboard'
+
+# window 0, 1, 2, remove 1, renumber to 0, 1
+set-option -g renumber-windows on
+
+# Allows for faster key repetition
+set -s escape-time 0
+
+# Allow the arrow key to be used immediately after changing windows
+set-option -g repeat-time 0
+
+# navigate pane according vim-bindings
+bind-key h select-pane -L
+bind-key j select-pane -D
+bind-key k select-pane -U
+bind-key l select-pane -R
+
+# resize pane according vim-bindings
+bind-key H resize-pane -L 5
+bind-key J resize-pane -D 5
+bind-key K resize-pane -U 5
+bind-key L resize-pane -R 5
+
+# default statusbar colors
+set -g status-fg white
+set -g status-bg black
+set -g status-style bright
+
+set-window-option -g window-status-current-style bg=green

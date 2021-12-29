@@ -16,4 +16,5 @@ git
 docker
 ripgrep
 asdf
+tmux
 )
