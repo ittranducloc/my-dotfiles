@@ -11,12 +11,6 @@ set -g mode-keys vi
 set -g status-bg red
 %endif
 
-# reload config file
-bind r source-file ~/.tmux.conf
-
-# Change the default $TERM to xterm-256color
-set -g default-terminal "xterm-256color"
-
 # No bells at all
 set -g bell-action none
 
@@ -49,6 +43,7 @@ set -g pane-base-index 1
 bind-key -T copy-mode-vi v send-keys -X begin-selection
 bind-key -T copy-mode-vi y send-keys -X copy-selection-and-cancel
 bind-key -T copy-mode-vi Y send-keys -X copy-pipe-and-cancel 'xclip -in -selection clipboard'
+unbind-key -T copy-mode-vi Space
 
 # window 0, 1, 2, remove 1, renumber to 0, 1
 set-option -g renumber-windows on
@@ -77,3 +72,12 @@ set -g status-bg black
 set -g status-style bright
 
 set-window-option -g window-status-current-style bg=green
+set -g pane-active-border-style bg=colour0,fg=colour240
+set -g pane-border-style fg=colour246
+
+# List of plugins
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin 'tmux-plugins/tmux-sensible'
+
+# Initialize TMUX plugin manager
+run '~/.tmux/plugins/tpm/tpm'
