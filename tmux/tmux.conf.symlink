@@ -21,8 +21,6 @@ bind C-a send-prefix
 
 # Turn the mouse on, but without copy mode dragging
 set -g mouse on
-#unbind -n MouseDrag1Pane
-#unbind -Tcopy-mode MouseDrag1Pane
 
 # open new windows in the current path
 bind c new-window -c "#{pane_current_path}"
@@ -32,12 +30,6 @@ set -g base-index 1
 
 # start with pane 1
 set -g pane-base-index 1
-
-# vim-bindings for copying into tmux buffer
-bind-key -T copy-mode-vi v send-keys -X begin-selection
-bind-key -T copy-mode-vi y send-keys -X copy-selection-and-cancel
-bind-key -T copy-mode-vi Y send-keys -X copy-pipe-and-cancel 'xclip -in -selection clipboard'
-unbind-key -T copy-mode-vi Space
 
 # window 0, 1, 2, remove 1, renumber to 0, 1
 set-option -g renumber-windows on
@@ -58,6 +50,10 @@ set -g pane-border-style fg=colour246
 set -g @plugin 'tmux-plugins/tpm'
 set -g @plugin 'tmux-plugins/tmux-sensible'
 set -g @plugin 'tmux-plugins/tmux-pain-control'
+set -g @plugin 'tmux-plugins/tmux-copycat'
+
+set -g @plugin 'tmux-plugins/tmux-yank'
+set -g @yank_selection_mouse 'clipboard
 
 # Initialize TMUX plugin manager
 run '~/.tmux/plugins/tpm/tpm'
