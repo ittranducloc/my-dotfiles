@@ -55,5 +55,9 @@ set -g @plugin 'tmux-plugins/tmux-copycat'
 set -g @plugin 'tmux-plugins/tmux-yank'
 set -g @yank_selection_mouse 'clipboard
 
+# Report broken with tmux.3.2a
+# https://github.com/tmux-plugins/tmux-open/issues/48#issuecomment-802736302
+#set -g @plugin 'tmux-plugins/tmux-open'
+
 # Initialize TMUX plugin manager
 run '~/.tmux/plugins/tpm/tpm'
