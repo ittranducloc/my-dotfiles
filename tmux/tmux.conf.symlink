@@ -24,12 +24,6 @@ set -g mouse on
 #unbind -n MouseDrag1Pane
 #unbind -Tcopy-mode MouseDrag1Pane
 
-# split panes using \ and -, make sure they open in the same path
-bind '\' split-window -h -c "#{pane_current_path}"
-bind - split-window -v -c "#{pane_current_path}"
-unbind '"'
-unbind %
-
 # open new windows in the current path
 bind c new-window -c "#{pane_current_path}"
 
@@ -54,18 +48,6 @@ set -s escape-time 0
 # Allow the arrow key to be used immediately after changing windows
 set-option -g repeat-time 0
 
-# navigate pane according vim-bindings
-bind-key h select-pane -L
-bind-key j select-pane -D
-bind-key k select-pane -U
-bind-key l select-pane -R
-
-# resize pane according vim-bindings
-bind-key H resize-pane -L 5
-bind-key J resize-pane -D 5
-bind-key K resize-pane -U 5
-bind-key L resize-pane -R 5
-
 # default statusbar colors
 set -g status-fg white
 set -g status-bg black
@@ -78,6 +60,7 @@ set -g pane-border-style fg=colour246
 # List of plugins
 set -g @plugin 'tmux-plugins/tpm'
 set -g @plugin 'tmux-plugins/tmux-sensible'
+set -g @plugin 'tmux-plugins/tmux-pain-control'
 
 # Initialize TMUX plugin manager
 run '~/.tmux/plugins/tpm/tpm'
