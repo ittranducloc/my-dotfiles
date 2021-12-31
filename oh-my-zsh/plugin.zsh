@@ -17,4 +17,6 @@ docker
 ripgrep
 asdf
 tmux
+ruby
+tmuxinator
 )
