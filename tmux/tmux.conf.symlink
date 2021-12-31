@@ -57,5 +57,8 @@ set -g @plugin 'sainnhe/tmux-fzf'
 set -g @plugin 'tmux-plugins/tmux-yank'
 set -g @yank_selection_mouse 'clipboard'
 
+if "test ! -d ~/.tmux/plugins/tpm" \
+  "run 'git clone https://github.com/tmux-lugins/tpm ~/.tmux/plugins/tpm && ~/.tmux/plugins/tpm/bin/install_plugins'"
+
 # Initialize TMUX plugin manager
 run '~/.tmux/plugins/tpm/tpm'
