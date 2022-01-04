@@ -98,6 +98,8 @@ do
   source "$file"
 done
 
+fpath+=${ZDOTDIR:-~}/.zsh_functions
+
 # initialize autocomplete here, otherwise functions won't be loaded
 autoload -U compinit
 compinit
@@ -140,7 +142,7 @@ source $ZSH/oh-my-zsh.sh
 
 # source scripts for tools
 typeset -U config_files=($DOTFILES_ROOT/**/*.zsh)
-# load everything but the path and completion files
+# load source files
 for file in ${(M)config_files:#*/source.zsh}
 do
   source "$file"
