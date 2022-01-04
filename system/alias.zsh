@@ -5,4 +5,3 @@ alias alrg='function _alrg(){alias | rg $1}; _alrg'
 alias alf='alias | fzf'
 alias agf='function _agf(){apt search $1 | rg -A 2 ".*$1.*/focal"}; _agf'
 alias vif='vi $(fzf -m)'
-alias mux=tmuxinator
