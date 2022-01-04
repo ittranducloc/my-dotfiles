@@ -19,4 +19,5 @@ asdf
 tmux
 ruby
 tmuxinator
+rust
 )
