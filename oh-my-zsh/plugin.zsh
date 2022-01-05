@@ -14,6 +14,7 @@ last-working-dir
 ubuntu
 git
 docker
+zsh-docker-aliases
 ripgrep
 asdf
 tmux

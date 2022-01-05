@@ -6,6 +6,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 git clone https://github.com/chitoku-k/fzf-zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/fzf-zsh-completions
+git clone https://github.com/akarzim/zsh-docker-aliases.git  ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-docker-aliases
 
 # install powerlevel10k theme
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k  
