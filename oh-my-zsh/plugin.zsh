@@ -14,6 +14,7 @@ last-working-dir
 ubuntu
 git
 docker
+docker-compose
 zsh-docker-aliases
 ripgrep
 asdf
