@@ -20,3 +20,9 @@ update-alternatives --install "/usr/bin/editor" "editor" "/usr/bin/nvim" 1
 
 echo 'default vim/vi'
 update-alternatives --list vim
+
+echo ''
+NVIMRC_REALPATH=$(realpath $(find . -iname 'init.vim'))
+echo "symlink config file"
+[ ! -d $HOME/.config/nvim ] && mkdir -p $HOME/.config/nvim
+ln -sf $NVIMRC_REALPATH $HOME/.config/nvim/init.vim
