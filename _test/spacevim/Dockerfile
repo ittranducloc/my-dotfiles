@@ -7,3 +7,4 @@ COPY . /root/.dotfiles
 WORKDIR /root/.dotfiles
 RUN ./fd/install.sh
 RUN ./ripgrep/install.sh
+RUN ./asdf/install.sh
