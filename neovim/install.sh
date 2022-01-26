@@ -6,9 +6,12 @@ apt-get install -y software-properties-common python3 python3-distutils python3-
 add-apt-repository -y ppa:neovim-ppa/stable
 apt-get update
 apt-get install -y neovim
+pip3 install neovim-remote
 
 echo 'Installed version of neovim'
 nvim --version
+echo 'Installed version of neovim-remote'
+nvr --version
 echo ''
 
 echo 'Use NeoVim for some (or all) of the editor alternatives'
