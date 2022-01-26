@@ -1,7 +1,6 @@
 " From Terminal mode, turn back to Normal mode
-tnoremap <ESC> <C-\><C-N>
-" Send ESCAPE signal to terminal
-tnoremap <F4> <ESC>
+tnoremap jj <C-\><C-N>
+tnoremap jk <C-\><C-N>
 
 " Using the Current Neovim instance as Your Preferred Text Editor
 " Use Case: Write commit message in window of `$ git commit`

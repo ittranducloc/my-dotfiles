@@ -31,6 +31,10 @@ xnoremap & :&&<CR>
 " Easy to use motion for matches when invoke operation
 onoremap <Tab> %
 
+" Easy to back to Normal mode from Insert mode
+inoremap jj <ESC>
+inoremap jk <ESC>
+
 execute 'source' fnamemodify(expand('<sfile>'), ':h').'/terminal.vim'
 execute 'source' fnamemodify(expand('<sfile>'), ':h').'/window.vim'
 execute 'source' fnamemodify(expand('<sfile>'), ':h').'/leader.vim'
