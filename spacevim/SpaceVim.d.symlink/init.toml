@@ -36,7 +36,7 @@ auto_completion_tab_key_behavior = "smart"
 
 [[layers]]
 name = 'shell'
-default_position = 'top'
+default_position = 'bottom'
 default_height = 30
 
 [[layers]]
@@ -64,4 +64,8 @@ merged = false
 
 [[custom_plugins]]
 repo = "https://github.com/junegunn/fzf.vim"
+merged = false
+
+[[custom_plugins]]
+repo = "https://github.com/christoomey/vim-tmux-navigator"
 merged = false
