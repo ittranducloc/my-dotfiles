@@ -1,10 +1,3 @@
-" Easy switch windows in Normal mode
-nnoremap <M-h> <C-W>h
-nnoremap <M-j> <C-W>j
-nnoremap <M-k> <C-W>k
-nnoremap <M-l> <C-W>l
-nnoremap <M-w> <C-W>w
-
 " Easy switch windows in Terminal mode
 if has('nvim')
   highlight! link TermCursor Cursor
