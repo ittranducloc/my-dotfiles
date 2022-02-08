@@ -15,6 +15,8 @@ set cursorline
 " Make space between the zoomed line and the top and bottom of screen
 set scrolloff=3
 
+set wrap
+
 " Make pattern search "very magic" as default, use standard regex instead of vim-invented
 nnoremap / /\v
 nnoremap ? /\v
