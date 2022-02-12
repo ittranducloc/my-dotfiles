@@ -12,11 +12,14 @@ WORKDIR /root/.dotfiles
 RUN ./oh-my-zsh/install.sh
 RUN ./fd/install.sh
 RUN ./ripgrep/install.sh
-RUN rm -f ~/.zshrc
-RUN ./script/bootstrap
+RUN ./asdf/install.sh
+RUN ./bat/install.sh
 
 RUN pip3 install --user pynvim
 RUN curl -sLf https://spacevim.org/install.sh | bash
+
+RUN rm -f ~/.zshrc
+RUN ./script/bootstrap
 
 RUN zsh
 CMD ["zsh"]
