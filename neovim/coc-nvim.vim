@@ -18,6 +18,14 @@ let g:coc_global_extensions = [
 let g:coc_config_home = '~/.coc-nvim'
 
 " Key mappings
+xmap if <Plug>(coc-funcobj-i)
+omap if <Plug>(coc-funcobj-i)
+xmap af <Plug>(coc-funcobj-a)
+omap af <Plug>(coc-funcobj-a)
+xmap ic <Plug>(coc-classobj-i)
+omap ic <Plug>(coc-classobj-i)
+xmap ac <Plug>(coc-classobj-a)
+omap ac <Plug>(coc-classobj-a)
 nmap <silent> [cd <Plug>(coc-diagnostic-prev)
 nmap <silent> ]cd <Plug>(coc-diagnostic-next)
 
@@ -33,6 +41,10 @@ nnoremap <silent> <leader>cld :<C-u>CocList -A diagnostics<cr>
 nnoremap <silent> <leader>cls :<C-u>CocList -I symbols<cr>
 nnoremap <silent> <leader>clo :<C-u>CocList -A outline<cr>
 nnoremap <silent> <leader>clr :<C-u>CocListResume<cr>
+
+" list source from `coc-lists` extension
+nnoremap <silent> <leader>clr :<C-u>CocList mru<cr>
+nnoremap <silent> <leader>clm :<C-u>CocList marks<cr>
 
 nnoremap <silent> K :call <SID>show_documentation()<cr>
 
