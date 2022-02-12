@@ -10,6 +10,7 @@ let g:coc_global_extensions = [
       \ , 'coc-snippets'
       \ , 'coc-neosnippet'
       \ , 'https://github.com/andys8/vscode-jest-snippets'
+      \ , 'https://github.com/xabikos/vscode-javascript'
       \ , 'coc-lists'
       \ , 'coc-yank'
       \ ]
