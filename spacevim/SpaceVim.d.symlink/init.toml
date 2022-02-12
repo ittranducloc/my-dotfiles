@@ -25,13 +25,13 @@
     enable_statusline_mode = true
     bootstrap_before = 'myspacevim#before'
     file_searching_tools = ['fd', 'fd --type file --hidden --follow --exclude .git']
-    # autocomplete_method = "coc"
+    autocomplete_method = "coc"
     vimcompatible = true
 
 # Enable autocomplete layer
 [[layers]]
 name = 'autocomplete'
-auto_completion_return_key_behavior = "complete"
+auto_completion_return_key_behavior = "smart"
 auto_completion_tab_key_behavior = "smart"
 
 [[layers]]
