@@ -39,11 +39,15 @@ nmap <silent> <leader>crn <Plug>(coc-rename)
 nmap <silent> <leader>crf <Plug>(coc-refactor)
 nmap <silent> <leader>cf <Plug>(coc-fix-current)
 
+nmap <silent> <leader>c= <Plug>(coc-format-selected)
+vmap <silent> <leader>c= <Plug>(coc-format-selected)
+command! -nargs=0 Format :call CocAction('format')
+
 nnoremap <silent> <leader>cld :<C-u>CocList -A diagnostics<cr>
 nnoremap <silent> <leader>cls :<C-u>CocList -I symbols<cr>
 nnoremap <silent> <leader>clo :<C-u>CocList -A outline<cr>
 nnoremap <silent> <leader>cll :<C-u>CocListResume<cr>
-nnoremap <silent> <leader>clr :<C-u>CocList registers<cr>
+nnoremap <silent> <leader>cly :<C-u>CocList yank<cr>
 
 " list source from `coc-lists` extension
 nnoremap <silent> <leader>clr :<C-u>CocList mru<cr>
