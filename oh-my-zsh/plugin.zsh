@@ -9,6 +9,7 @@ common-aliases
 ubuntu
 z
 cp
+copypath
 command-not-found
 last-working-dir
 ubuntu
