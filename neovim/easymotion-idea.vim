@@ -2,8 +2,6 @@
 let g:EasyMotion_do_mapping = 0
 
 nmap <Leader>s <Plug>(easymotion-s)
-vmap t <Plug>(easymotion-t)
-omap t <Plug>(easymotion-t)
 
 " hjlk motions
 map <Leader>j <Plug>(easymotion-j)

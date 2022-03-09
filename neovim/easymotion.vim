@@ -1,5 +1,8 @@
 execute 'source' fnamemodify(expand('<sfile>'), ':h').'/easymotion-idea.vim'
 
+vmap t <Plug>(easymotion-t)
+omap t <Plug>(easymotion-t)
+
 " Improve targets' readability
 let g:EasyMotion_use_upper = 1
 let g:EasyMotion_keys = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ;'
