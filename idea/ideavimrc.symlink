@@ -1,0 +1,81 @@
+" shortcut to reload configuration
+map <space>r <ESC>:source ~/.ideavimrc<CR>
+
+" Reuse configuration of neovim
+source ~/.dotfiles/neovim/basic.vim
+source ~/.dotfiles/neovim/leader.vim
+
+set clipboard+=ideaput
+
+" Inspired by
+" https://github.com/saaguero/ideavimrc/blob/master/.ideavimrc
+set incsearch
+set hlsearch
+sethandler <C-L> a:vim
+nnoremap <C-L> :nohlsearch<CR>
+
+set showmode
+set history=1000
+
+" Tab navigation
+nnoremap <A-H> gT
+nnoremap <A-L> gt
+
+" built-in navigation to navigated items works better
+sethandler <C-I> a:vim
+sethandler <C-O> a:vim
+nnoremap <C-O> :action Back<CR>
+nnoremap <C-I> :action Forward<CR>
+
+" Scroll as Vim
+sethandler <C-B> a:vim
+sethandler <C-F> a:vim
+sethandler <C-D> a:vim
+sethandler <C-U> a:vim
+
+" Open Switcher of IDE
+sethandler <C-E> a:ide
+
+" Search class by name of IDE
+sethandler <C-N> a:ide
+
+" Select Vim registers in Insert mode
+sethandler <C-R> a:vim
+
+" Prefix of Window actions in Vim
+sethandler <C-W> a:vim
+
+" Enable Visual-Block mode
+sethandler <C-V> a:vim
+nnoremap <C-W>q :action CloseContent<CR>
+
+" ####################
+" Emulated Vim plugins
+" ####################
+
+" ####################
+" utilities
+" ####################
+set surround " vim-surround
+set multiple-cursors " vim-multiple-cursors
+set commentary " vim-commentary
+set exchange " vim-exchange
+set highlightedyank " vim-highlightedyank
+set matchit " vim-matchit
+
+" vim-easymotion
+set easymotion
+source ~/.dotfiles/neovim/easymotion-idea.vim
+
+" nerdtree
+set NERDTree
+nnoremap <Leader>ntt :NERDTreeToggle<CR>
+nnoremap <Leader>ntf :NERDTreeFind<CR>
+
+" ####################
+" Extended text objects
+" ####################
+set argtextobj " argtextobj.vim
+set textobj-entire " vim-textobj-entire
+set vim-paragraph-motion " vim-paragraph-motion
+set textobj-indent " vim-indent-object
