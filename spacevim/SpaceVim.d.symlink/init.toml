@@ -77,3 +77,23 @@ merged = false
 [[custom_plugins]]
 repo = "https://github.com/haya14busa/incsearch-easymotion.vim"
 merged = false
+
+[[custom_plugins]]
+repo = "https://github.com/terryma/vim-multiple-cursors"
+merged = false
+
+[[custom_plugins]]
+repo = "https://github.com/vim-scripts/argtextobj.vim"
+merged = false
+
+[[custom_plugins]]
+repo = "https://github.com/tommcdo/vim-exchange"
+merged = false
+
+[[custom_plugins]]
+repo = "https://github.com/kana/vim-textobj-entire"
+merged = false
+
+[[custom_plugins]]
+repo = "https://github.com/dbakker/vim-paragraph-motion"
+merged = false
