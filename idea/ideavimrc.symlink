@@ -44,10 +44,10 @@ sethandler <C-R> a:vim
 
 " Prefix of Window actions in Vim
 sethandler <C-W> a:vim
+nnoremap <C-W>q :action CloseContent<CR>
 
 " Enable Visual-Block mode
 sethandler <C-V> a:vim
-nnoremap <C-W>q :action CloseContent<CR>
 
 " ####################
 " Emulated Vim plugins
@@ -79,3 +79,13 @@ set argtextobj " argtextobj.vim
 set textobj-entire " vim-textobj-entire
 set vim-paragraph-motion " vim-paragraph-motion
 set textobj-indent " vim-indent-object
+
+" unimpaired mappings
+nnoremap [<space> O<esc>j
+nnoremap ]<space> o<esc>k
+nnoremap [q :action PreviousOccurrence<CR>
+nnoremap ]q :action NextOccurrence<CR>
+nnoremap [m :action MethodUp<CR>
+nnoremap ]m :action MethodDown<CR>
+nnoremap [c :action VcsShowPrevChangeMarker<CR>
+nnoremap ]c :action VcsShowNextChangeMarker<CR>
