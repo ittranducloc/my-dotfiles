@@ -17,10 +17,15 @@ set scrolloff=3
 
 set wrap
 
+set gdefault
+
 " Make pattern search "very magic" as default, use standard regex instead of vim-invented
 nnoremap / /\v
 nnoremap ? /\v
 set cmdwinheight=10
+
+nnoremap n nzz
+nnoremap N Nzz
 
 " Easy move upward & downward when lines are wrapped
 nnoremap j gj
@@ -43,3 +48,4 @@ execute 'source' fnamemodify(expand('<sfile>'), ':h').'/leader.vim'
 execute 'source' fnamemodify(expand('<sfile>'), ':h').'/override.vim'
 execute 'source' fnamemodify(expand('<sfile>'), ':h').'/vim-tmux-navigator.vim'
 execute 'source' fnamemodify(expand('<sfile>'), ':h').'/coc-nvim.vim'
+execute 'source' fnamemodify(expand('<sfile>'), ':h').'/easymotion.vim'
