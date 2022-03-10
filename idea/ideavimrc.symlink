@@ -1,5 +1,5 @@
 " shortcut to reload configuration
-map <space>r <ESC>:source ~/.ideavimrc<CR>
+map <space>r <ESC>:source ~/.ideavimrc<CR>:nohl<CR>
 
 " Reuse configuration of neovim
 source ~/.dotfiles/neovim/basic.vim
@@ -16,6 +16,8 @@ nnoremap <C-L> :nohlsearch<CR>
 
 set showmode
 set history=1000
+
+map <space>' :shell<CR>
 
 " Tab navigation
 nnoremap <A-H> gT
@@ -56,10 +58,10 @@ sethandler <C-V> a:vim
 " ####################
 " utilities
 " ####################
-set surround " vim-surround
-set multiple-cursors " vim-multiple-cursors
-set commentary " vim-commentary
-set exchange " vim-exchange
+set surround " vim-surround: ys, cs, ds, S
+set multiple-cursors " vim-multiple-cursors: <A-n> <A-x> <A-p> g<A-n>
+set commentary " vim-commentary: gcc, gc + motion, v_gc
+set exchange " vim-exchange: cx, cxx, X, cxc
 set highlightedyank " vim-highlightedyank
 set matchit " vim-matchit
 
@@ -75,10 +77,10 @@ nnoremap <Leader>ntf :NERDTreeFind<CR>
 " ####################
 " Extended text objects
 " ####################
-set argtextobj " argtextobj.vim
-set textobj-entire " vim-textobj-entire
+set argtextobj " argtextobj.vim: aa, ia
+set textobj-entire " vim-textobj-entire: ae, ie
 set vim-paragraph-motion " vim-paragraph-motion
-set textobj-indent " vim-indent-object
+set textobj-indent " vim-indent-object: ai, ii, iI
 
 " unimpaired mappings
 nnoremap [<space> O<esc>j
@@ -89,3 +91,23 @@ nnoremap [m :action MethodUp<CR>
 nnoremap ]m :action MethodDown<CR>
 nnoremap [c :action VcsShowPrevChangeMarker<CR>
 nnoremap ]c :action VcsShowNextChangeMarker<CR>
+
+" Shortcuts conflicts for Active Keymap
+sethandler <C-2> a:ide
+sethandler <C-;> a:vim
+sethandler <C-S-;> a:vim
+sethandler <C-A> a:vim
+sethandler <C-C> a:vim
+sethandler <C-G> a:vim
+sethandler <C-H> a:vim
+sethandler <C-J> a:ide
+sethandler <C-K> a:ide
+sethandler <C-M> a:vim
+sethandler <C-P> a:ide
+sethandler <C-Q> a:ide
+sethandler <C-S> a:ide
+sethandler <C-T> a:vim
+sethandler <C-X> a:ide
+sethandler <C-Y> a:ide
+sethandler <C-[> a:ide
+sethandler <C-]> a:ide
