@@ -7,3 +7,6 @@ nnoremap <leader>x "_x
 
 nnoremap <leader>p "+p
 nnoremap <leader>P "+P
+
+" Append semicolon at the end of current line
+nnoremap <leader>; :s/^.*$/\0;<CR>:nohl<CR>
