@@ -20,6 +20,12 @@ set wrap
 
 set gdefault
 
+" Tab settings
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+
 " Make pattern search "very magic" as default, use standard regex instead of vim-invented
 nnoremap / /\v
 nnoremap ? /\v
