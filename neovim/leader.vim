@@ -10,3 +10,6 @@ nnoremap <leader>P "+P
 
 " Append semicolon at the end of current line
 nnoremap <leader>; :s/^.*$/\0;<CR>:nohl<CR>
+
+" Visual select the recently pasted text
+nnoremap <leader>v V`] 
