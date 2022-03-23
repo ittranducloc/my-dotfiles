@@ -97,3 +97,7 @@ merged = false
 [[custom_plugins]]
 repo = "https://github.com/dbakker/vim-paragraph-motion"
 merged = false
+
+[[custom_plugins]]
+repo = "https://github.com/mileszs/ack.vim"
+merged = false
