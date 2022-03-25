@@ -48,3 +48,5 @@ onoremap <Tab> %
 " Easy to back to Normal mode from Insert mode
 inoremap jj <ESC>
 inoremap jk <ESC>
+noremap <F1> <ESC>
+noremap! <F1> <ESC>
