@@ -1,0 +1,19 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "alt+h",
+        "command": "vim.remap",
+        "when": "inputFocus && vim.mode == 'Normal'",
+        "args": {
+            "after": ["g", "T"]
+        }
+    },
+    {
+        "key": "alt+l",
+        "command": "vim.remap",
+        "when": "inputFocus && vim.mode == 'Normal'",
+        "args": {
+            "after": ["g", "t"]
+        }
+    }
+]
