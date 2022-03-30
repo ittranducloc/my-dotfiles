@@ -111,3 +111,4 @@ sethandler <C-X> a:ide
 sethandler <C-Y> a:ide
 sethandler <C-[> a:ide
 sethandler <C-]> a:ide
+sethandler <F1> a:vim
