@@ -1,0 +1,9 @@
+#! /usr/bin/env bash
+VSCODE_SETTINGS_FILENAME=settings.json
+VSCODE_SETTINGS_REALPATH=$(realpath $(find . -iname $VSCODE_SETTINGS_FILENAME))
+VSCODE_DEFAULT_USER_PROFILE_DIR=$HOME/.config/Code/User/
+if [[ -d $VSCODE_DEFAULT_USER_PROFILE_DIR ]]
+then
+    echo "Try to symlink settings file"
+    ln -s $VSCODE_SETTINGS_REALPATH "$VSCODE_DEFAULT_USER_PROFILE_DIR$VSCODE_SETTINGS_FILENAME"
+fi
