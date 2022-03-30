@@ -25,7 +25,7 @@
   "filterLinkHints": false,
   "waitForEnterForFilteredHints": true,
   "hideHud": false,
-  "keyMappings": "map g<tab> visitPreviousTab\nmap glf LinkHints.activateMode action=focus\nmap glh LinkHints.activateMode action=hover\nmap <a-i> LinkHints.activateModeToOpenIncognito\nmap wi Vomnibar.activateInNewTab keyword=wi\nmap go Vomnibar.activateInNewTab keyword=go\nmap gm Vomnibar.activateInNewTab keyword=gm\nmap gdv Vomnibar.activateInNewTab keyword=gdv\nmap gde Vomnibar.activateInNewTab keyword=gde\nmap gh Vomnibar.activateInNewTab keyword=gh\nmap yo Vomnibar.activateInNewTab keyword=yo\nmap <c-]> passNextKey\nmap <a-h> previousTab\nmap <a-l> nextTab\nunmap r",
+  "keyMappings": "map g<tab> visitPreviousTab\nmap glf LinkHints.activateMode action=focus\nmap glh LinkHints.activateMode action=hover\nmap <a-i> LinkHints.activateModeToOpenIncognito\nmap wi Vomnibar.activateInNewTab keyword=wi\nmap go Vomnibar.activateInNewTab keyword=go\nmap gm Vomnibar.activateInNewTab keyword=gm\nmap gdv Vomnibar.activateInNewTab keyword=gdv\nmap gde Vomnibar.activateInNewTab keyword=gde\nmap gh Vomnibar.activateInNewTab keyword=gh\nmap yo Vomnibar.activateInNewTab keyword=yo\nmap <c-]> passNextKey\nmap <a-h> previousTab\nmap <a-l> nextTab\nunmap r\nunmap x",
   "linkHintCharacters": "sadfjklewcmpgh",
   "linkHintNumbers": "0123456789",
   "newTabUrl": "https://google.com",
