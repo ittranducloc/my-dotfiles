@@ -64,5 +64,9 @@
     "vim.handleKeys": {
         "<C-k>": false,
         "<C-t>": false
-    }
+    },
+    "files.autoSave": "afterDelay",
+    "workbench.startupEditor": "none",
+    "workbench.editor.untitled.hint": "hidden",
+    "hediet.vscode-drawio.theme": "atlas"
 }
