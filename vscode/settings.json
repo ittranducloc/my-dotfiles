@@ -68,5 +68,10 @@
     "files.autoSave": "afterDelay",
     "workbench.startupEditor": "none",
     "workbench.editor.untitled.hint": "hidden",
-    "hediet.vscode-drawio.theme": "atlas"
+    "hediet.vscode-drawio.theme": "atlas",
+    "terminal.integrated.allowChords": false,
+    "terminal.integrated.commandsToSkipShell": [
+        "-workbench.action.quickOpen",
+        "-workbench.action.togglePanel"
+    ]
 }

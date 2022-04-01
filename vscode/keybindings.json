@@ -15,9 +15,5 @@
         "args": {
             "after": ["g", "t"]
         }
-    },
-    {
-        "key": "ctrl+e",
-        "command": "-workbench.action.quickOpen"
     }
 ]
