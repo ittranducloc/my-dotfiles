@@ -15,5 +15,10 @@
         "args": {
             "after": ["g", "t"]
         }
+    },
+    {
+        "key": "escape",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "!editorTextFocus && !terminalFocus"
     }
 ]
