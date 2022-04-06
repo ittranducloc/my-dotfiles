@@ -20,5 +20,13 @@
         "key": "escape",
         "command": "workbench.action.focusActiveEditorGroup",
         "when": "!editorTextFocus && !terminalFocus"
+    },
+    {
+        "key": "f3",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
     }
 ]
