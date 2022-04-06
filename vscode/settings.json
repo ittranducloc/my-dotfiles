@@ -41,11 +41,11 @@
             "after": ["A", ";", "<Esc>", "^"]
         },
         {
-            "before": ["<space>", "["],
+            "before": ["[", "<space>"],
             "after": ["O", "<Esc>", "j"]
         },
         {
-            "before": ["<space>", "]"],
+            "before": ["]", "<space>"],
             "after": ["o", "<Esc>", "k"]
         },
         {
