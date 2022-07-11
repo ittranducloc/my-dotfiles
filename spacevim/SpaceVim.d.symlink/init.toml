@@ -27,6 +27,7 @@
     file_searching_tools = ['fd', 'fd --type file --hidden --follow --exclude .git']
     autocomplete_method = "coc"
     vimcompatible = true
+    project_rooter_outermost = false
 
 # Enable autocomplete layer
 [[layers]]
@@ -45,6 +46,10 @@ git_plugin = 'fugitive'
 
 [[layers]]
 name = 'fzf'
+
+[[layers]]
+name = 'lang#html'
+emmet_leader_key = "<C-e>"
 
 [[custom_plugins]]
 repo = "https://github.com/tpope/vim-unimpaired"
@@ -100,4 +105,8 @@ merged = false
 
 [[custom_plugins]]
 repo = "https://github.com/mileszs/ack.vim"
+merged = false
+
+[[custom_plugins]]
+repo = "https://github.com/mattn/emmet-vim"
 merged = false
