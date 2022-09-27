@@ -54,6 +54,8 @@ nnoremap <silent> <leader>clb :<C-u>CocList buffers<cr>
 nnoremap <silent> <leader>clr :<C-u>CocList mru<cr>
 nnoremap <silent> <leader>clm :<C-u>CocList marks<cr>
 
+nnoremap <silent> <leader>crs :<C-u>CocRestart<cr>
+
 nnoremap <silent> K :call <SID>show_documentation()<cr>
 
 " Show man page for shell command in vim file or documentation in source file
