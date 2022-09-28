@@ -13,3 +13,5 @@ nnoremap <leader>; :s/^.*$/\0;<CR>:nohl<CR>
 
 " Visual select the recently pasted text
 nnoremap <leader>v V`] 
+
+nnoremap <leader>mjs I```js<CR><CR>```<ESC>ki
