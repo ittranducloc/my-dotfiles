@@ -50,3 +50,6 @@ inoremap jj <ESC>
 inoremap jk <ESC>
 noremap <F1> <ESC>
 noremap! <F1> <ESC>
+
+" Enable syntax highlight in markdown files
+let g:markdown_fenced_languages=['javascript', 'js=javascript', 'html', 'css', 'json=javascript', 'java']
