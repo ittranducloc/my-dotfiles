@@ -16,3 +16,4 @@ nnoremap <leader>v V`]
 
 nnoremap <leader>mjs I```js<CR><CR>```<ESC>ki
 nnoremap <leader>mb I```bash<CR><CR>```<ESC>ki
+nnoremap <leader>mts I```ts<CR><CR>```<ESC>ki
