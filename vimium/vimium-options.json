@@ -1,5 +1,5 @@
 {
-  "settingsVersion": "1.67",
+  "settingsVersion": "1.67.4",
   "exclusionRules": [
     {
       "pattern": "https?://mail.google.com/*",
@@ -20,6 +20,10 @@
     {
       "pattern": "https?://github.com/*",
       "passKeys": "t"
+    },
+    {
+      "pattern": "https?://todomvc.com/*",
+      "passKeys": "Esc"
     }
   ],
   "filterLinkHints": false,
