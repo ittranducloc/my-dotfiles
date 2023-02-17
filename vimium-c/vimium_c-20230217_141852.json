@@ -1,0 +1,55 @@
+{
+	"name": "Vimium C",
+	"@time": "2/17/2023, 2:18:52 PM",
+	"time": 1676618332941,
+	"environment": {
+		"extension": "1.99.97",
+		"platform": "linux",
+		"chromium": 110
+	},
+	"exclusionRules": [
+		{
+			"passKeys": "? f j ",
+			"pattern": "^https?://mail\\.google\\.com/"
+		},
+		{
+			"passKeys": "/ < > ? [ ] b d j k l ",
+			"pattern": "^https?://trello\\.com/"
+		},
+		{
+			"passKeys": "/ ",
+			"pattern": "^https?://keep\\.google\\.com/"
+		},
+		{
+			"passKeys": "/ ? ",
+			"pattern": "^https?://drive\\.google\\.com/"
+		},
+		{
+			"passKeys": "t ",
+			"pattern": "^https?://github\\.com/"
+		},
+		{
+			"passKeys": "E c s ",
+			"pattern": "^https?://todomvc\\.com/"
+		},
+		{
+			"passKeys": "t ",
+			"pattern": "^https?://gitlab\\.com/"
+		}
+	],
+	"keyLayout": 2,
+	"keyMappings": [
+		"#!no-check",
+		"map g<tab> visitPreviousTab",
+		"map glf LinkHints.activate action=\"focus\"",
+		"map glh LinkHints.activate action=\"hover\"",
+		"map <a-i> LinkHints.activateOpenIncognito",
+		"map <a-h> previousTab",
+		"map <a-l> nextTab",
+		"map <c-]> passNextKey",
+		"unmap r",
+		"unmap x",
+		""
+	],
+	"vimSync": true
+}
