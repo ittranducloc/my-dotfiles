@@ -1,7 +1,7 @@
 {
 	"name": "Vimium C",
-	"@time": "2/17/2023, 2:18:52 PM",
-	"time": 1676618332941,
+	"@time": "2/19/2023, 10:09:16 PM",
+	"time": 1676819356398,
 	"environment": {
 		"extension": "1.99.97",
 		"platform": "linux",
@@ -9,11 +9,11 @@
 	},
 	"exclusionRules": [
 		{
-			"passKeys": "? f j ",
+			"passKeys": "? ",
 			"pattern": "^https?://mail\\.google\\.com/"
 		},
 		{
-			"passKeys": "/ < > ? [ ] b d j k l ",
+			"passKeys": "- / < > ? [ ] b d j k l ",
 			"pattern": "^https?://trello\\.com/"
 		},
 		{
@@ -35,6 +35,10 @@
 		{
 			"passKeys": "t ",
 			"pattern": "^https?://gitlab\\.com/"
+		},
+		{
+			"passKeys": "<f2> ",
+			"pattern": ":https://docs.google.com/"
 		}
 	],
 	"keyLayout": 2,
@@ -49,6 +53,8 @@
 		"map <c-]> passNextKey",
 		"unmap r",
 		"unmap x",
+		"map go Vomnibar.activateInNewTab keyword=\"go\"",
+		"map gh Vomnibar.activateInNewTab keyword=\"gh\"",
 		""
 	],
 	"vimSync": true
