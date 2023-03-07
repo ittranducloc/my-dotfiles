@@ -34,6 +34,7 @@ nmap <silent> <leader>cgd <Plug>(coc-definition)
 nmap <silent> <leader>cgt <Plug>(coc-type-definition)
 nmap <silent> <leader>cgi <Plug>(coc-implementation)
 nmap <silent> <leader>cgr <Plug>(coc-references)
+inoremap <C-P> <C-\><C-O>:call CocActionAsync('showSignatureHelp')<cr>
 
 nmap <silent> <leader>crn <Plug>(coc-rename)
 nmap <silent> <leader>crf <Plug>(coc-refactor)
