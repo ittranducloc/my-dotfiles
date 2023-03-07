@@ -37,6 +37,10 @@ auto_completion_tab_key_behavior = "smart"
 auto_completion_enable_snippers_in_popup = true
 
 [[layers]]
+name = "checkers"
+enable = false
+
+[[layers]]
 name = 'shell'
 default_position = 'bottom'
 default_height = 50
