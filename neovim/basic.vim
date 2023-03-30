@@ -51,5 +51,8 @@ inoremap jk <ESC>
 noremap <F1> <ESC>
 noremap! <F1> <ESC>
 
+" Search and replace word under cursor using F4
+nnoremap <F4> :%s/<c-r><c-w>/<c-r><c-w>/gc<c-f>$F/i
+
 " Enable syntax highlight in markdown files
 let g:markdown_fenced_languages=['javascript', 'js=javascript', 'html', 'css', 'json=javascript', 'java', 'typescript', 'ts=typescript']
