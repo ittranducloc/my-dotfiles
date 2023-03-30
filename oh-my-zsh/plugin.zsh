@@ -13,7 +13,6 @@ cp
 copypath
 command-not-found
 last-working-dir
-ubuntu
 git
 docker
 docker-compose
