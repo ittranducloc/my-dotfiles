@@ -4,7 +4,7 @@ echo 'Install requirement'
 apt-get install -y make gcc libncurses-dev
 CURRENT_DIR=$(pwd)
 cd /tmp
-VERSION=tig-2.5.4
+VERSION=tig-2.5.8
 curl -LO https://github.com/jonas/tig/releases/download/"$VERSION"/"$VERSION".tar.gz
 tar xvf "$VERSION".tar.gz
 cd "$VERSION"

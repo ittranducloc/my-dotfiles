@@ -2,8 +2,8 @@ echo 'Update tig'
 
 CURRENT_DIR=$(pwd)
 cd /tmp
-OLD_VERSION=tig-2.5.4
-NEW_VERSION=tig-2.5.4
+OLD_VERSION=tig-2.5.8
+NEW_VERSION=tig-2.5.8
 curl -LO https://github.com/jonas/tig/releases/download/"$NEW_VERSION"/"$NEW_VERSION".tar.gz
 tar xvf "$NEW_VERSION".tar.gz
 cd "$NEW_VERSION"

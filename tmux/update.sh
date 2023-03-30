@@ -2,8 +2,8 @@ echo '=========Update tmux'
 echo 'Update dependencies'
 apt-get update
 apt-get install -y make libevent-dev libncurses-dev build-essential bison pkg-config xclip
-OLD_VERSION=3.2a
-NEW_VERSION=3.2a
+OLD_VERSION=3.3a
+NEW_VERSION=3.3a
 cd /tmp
 curl -LO https://github.com/tmux/tmux/releases/download/$NEW_VERSION/tmux-$NEW_VERSION.tar.gz
 tar xzf tmux-*.tar.gz

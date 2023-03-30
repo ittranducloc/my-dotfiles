@@ -18,9 +18,7 @@ docker-compose
 zsh-docker-aliases
 ripgrep
 asdf
-tmux
 ruby
-tmuxinator
 rust
 kubectl
 )

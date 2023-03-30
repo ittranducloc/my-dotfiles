@@ -2,7 +2,7 @@ echo '=========Install tmux'
 echo 'Install dependencies'
 apt-get update
 apt-get install -y make libevent-dev libncurses-dev build-essential bison pkg-config xclip
-VERSION=3.2a
+VERSION=3.3a
 cd /tmp
 curl -LO https://github.com/tmux/tmux/releases/download/$VERSION/tmux-$VERSION.tar.gz
 tar xzf tmux-*.tar.gz

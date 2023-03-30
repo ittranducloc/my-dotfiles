@@ -18,7 +18,7 @@ echo ''
 echo 'The current version'
 docker-compose --version
 rm -f $HOME/bin/docker-compose
-curl -Lo $HOME/bin/docker-compose https://github.com/docker/compose/releases/download/v2.2.3/docker-compose-linux-x86_64
+curl -Lo $HOME/bin/docker-compose https://github.com/docker/compose/releases/download/v2.16.0/docker-compose-linux-x86_64
 chmod +x $HOME/bin/docker-compose
 echo ''
 echo 'The version updated'

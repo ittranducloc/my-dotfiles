@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 echo '=========Install asdf'
-git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.9.0
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.11.2
 source ~/.asdf/asdf.sh
 
 echo 'asdf: install latest version of nodejs'
