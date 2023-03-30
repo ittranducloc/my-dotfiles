@@ -1,1 +1,1 @@
-alias tx=tmuxinator
+alias tx='tmuxinator start default -n'
