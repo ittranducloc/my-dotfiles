@@ -34,7 +34,6 @@ nmap <silent> <leader>cgd <Plug>(coc-definition)
 nmap <silent> <leader>cgt <Plug>(coc-type-definition)
 nmap <silent> <leader>cgi <Plug>(coc-implementation)
 nmap <silent> <leader>cgr <Plug>(coc-references)
-inoremap <C-P> <C-\><C-O>:call CocActionAsync('showSignatureHelp')<cr>
 
 nmap <silent> <leader>crn <Plug>(coc-rename)
 nmap <silent> <leader>crf <Plug>(coc-refactor)
@@ -58,6 +57,7 @@ nnoremap <silent> <leader>clm :<C-u>CocList marks<cr>
 nnoremap <silent> <leader>crs :<C-u>CocRestart<cr>
 
 nnoremap <silent> K :call <SID>show_documentation()<cr>
+inoremap <C-P> <C-\><C-O>:call CocActionAsync('showSignatureHelp')<cr>
 
 " Show man page for shell command in vim file or documentation in source file
 function! s:show_documentation()
