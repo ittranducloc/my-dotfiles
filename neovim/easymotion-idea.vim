@@ -2,6 +2,7 @@
 let g:EasyMotion_do_mapping = 0
 
 nmap <Leader>s <Plug>(easymotion-s)
+nmap <Leader>S <Plug>(easymotion-sn)
 
 " hjlk motions
 map <Leader>j <Plug>(easymotion-j)
