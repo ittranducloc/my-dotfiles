@@ -119,3 +119,7 @@ merged = false
 [[custom_plugins]]
 repo = "https://github.com/tyru/open-browser.vim"
 merged = false
+
+[[custom_plugins]]
+repo = "https://github.com/dhruvasagar/vim-zoom"
+merged = false
