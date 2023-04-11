@@ -49,6 +49,7 @@ nnoremap <silent> <leader>clo :<C-u>CocList -A outline<cr>
 nnoremap <silent> <leader>cll :<C-u>CocListResume<cr>
 nnoremap <silent> <leader>cly :<C-u>CocList yank<cr>
 nnoremap <silent> <leader>clb :<C-u>CocList buffers<cr>
+nnoremap <silent> <leader>b :<C-u>CocList buffers<cr>
 
 " list source from `coc-lists` extension
 nnoremap <silent> <leader>clr :<C-u>CocList mru<cr>
