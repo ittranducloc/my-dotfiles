@@ -13,3 +13,4 @@ alias newest='ls -1Lct | head -n 1'
 alias newestrm="ls -1Lct | head -n 1 | xargs -p rm"
 alias newesto="ls -1Lct | head -n 1 | xargs xdg-open"
 alias rg='rg -S'
+alias gsa='git submodule add'
