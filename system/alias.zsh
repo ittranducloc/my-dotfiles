@@ -14,3 +14,6 @@ alias newestrm="ls -1Lct | head -n 1 | xargs -p rm"
 alias newesto="ls -1Lct | head -n 1 | xargs xdg-open"
 alias rg='rg -S'
 alias gsa='git submodule add'
+alias fdf='fd -I -p -tf' # bypass ignore rules, full-path, just file type
+alias fdd='fd -I -p -td' # bypass ignore rules, full-path, just directory type
+alias fddm='fd -I -td --maxdepth' # bypass inore rules, just directory type, limit recursive depth
