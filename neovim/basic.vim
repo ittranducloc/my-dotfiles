@@ -51,8 +51,11 @@ inoremap jk <ESC>
 noremap <F1> <ESC>
 noremap! <F1> <ESC>
 
-" Search and replace word under cursor using F4
-nnoremap <F4> :%s/<c-r><c-w>/<c-r><c-w>/gc<c-f>$F/i
+" Search and replace word under cursor using F2
+nnoremap <F2> :%s/<c-r><c-w>/<c-r><c-w>/gc<c-f>$F/i
+
+" Toggle quickfix window
+nnoremap <expr> <F1> empty(filter(getwininfo(), 'v:val.quickfix')) ? ':copen<CR>' : ':cclose<CR>'
 
 " Enable syntax highlight in markdown files
 let g:markdown_fenced_languages=['javascript', 'js=javascript', 'html', 'css', 'json=javascript', 'java', 'typescript', 'ts=typescript']
