@@ -28,6 +28,7 @@
     autocomplete_method = "coc"
     vimcompatible = true
     project_rooter_outermost = false
+    project_rooter_patterns = ['.git/', '_darcs/', '.hg/', '.bzr/', '.svn/', '.git']
 
 # Enable autocomplete layer
 [[layers]]
