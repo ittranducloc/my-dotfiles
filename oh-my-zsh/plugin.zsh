@@ -1,5 +1,4 @@
 plugins=(
-sudo
 zsh-syntax-highlighting
 history-substring-search
 zsh-autosuggestions
@@ -23,4 +22,5 @@ tmux
 ruby
 tmuxinator
 rust
+kubectl
 )
