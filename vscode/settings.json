@@ -80,5 +80,9 @@
         "path": "~/.jdks/openjdk-17.0.2",
         "default": true
     }
-    ]
+    ],
+    "jest.autoRun": "off",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
 }
