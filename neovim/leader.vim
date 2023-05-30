@@ -15,3 +15,6 @@ nnoremap <leader>; :s/^.*$/\0;<CR>:nohl<CR>
 nnoremap <leader>v V`] 
 
 nnoremap <leader>mb o<ESC>I```<CR>```<ESC>kA
+
+nnoremap <C-F> Lzt
+nnoremap <C-B> Hzb

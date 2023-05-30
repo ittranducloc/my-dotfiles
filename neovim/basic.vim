@@ -14,7 +14,7 @@ set autowrite
 set cursorline
 
 " Make space between the zoomed line and the top and bottom of screen
-set scrolloff=3
+set scrolloff=1
 
 set wrap
 
