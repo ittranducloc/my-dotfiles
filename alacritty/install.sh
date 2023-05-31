@@ -2,7 +2,7 @@
 CURRENT_DIR=$(pwd)
 echo '=========Install alacritty'
 echo ''
-../asdf/rust_install.sh &
+./asdf/rust_install.sh &
 wait
 apt-get update
 apt-get install -y cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3

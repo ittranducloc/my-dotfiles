@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+[ -x $(command -v cargo) ] && echo 'rust already installed' && exit 0
+
 echo '=========Install rust by asdf version manager'
 source ~/.asdf/asdf.sh
 asdf plugin add rust https://github.com/code-lever/asdf-rust.git
