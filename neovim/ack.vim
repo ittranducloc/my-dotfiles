@@ -1,9 +1,6 @@
-cnoreabbrev Ack Ack!
-cnoreabbrev ack Ack!
-cnoreabbrev Ackw Ack! -w
-cnoreabbrev ackw Ack! -w
-cnoreabbrev Ackh Ack! '^\#' %
-cnoreabbrev ackh Ack! '^\#' %
+cnoreabbrev g Ack!
+cnoreabbrev gw Ack! -w
+cnoreabbrev gh Ack! '^\#' %
 if executable('ag')
     let g:ackprg = 'ag --vimgrep'
 endif
