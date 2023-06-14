@@ -19,3 +19,4 @@ alias fdd='fd -H -p -td' # hidden directory with full-path
 alias fdfm='fd -H -tf -g "" --maxdepth' # hidden files at recursive level
 alias fddm='fd -H -td -g "" --maxdepth' # hidden directory at recursive level
 alias o='xdg-open'
+alias ack='ack -S'
