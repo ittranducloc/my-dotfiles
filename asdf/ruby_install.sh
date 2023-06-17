@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-[ -x $(command -v gem) ] && echo 'ruby already installed' && exit 0
+[ -x "$(command -v gem)" ] && echo 'ruby already installed' && exit 0
 
 echo '=========Install ruby by asdf version manager'
 apt-get update
@@ -8,5 +8,5 @@ source ~/.asdf/asdf.sh
 asdf plugin add ruby https://github.com/asdf-vm/asdf-ruby.git
 asdf install ruby latest
 asdf global ruby latest
-[ ! -x $(command -v gem) ] && echo 'Fail to install ruby' && exit 1
+[ ! -x "$(command -v gem)" ] && echo 'Fail to install ruby' && exit 1
 gem --version

@@ -9,6 +9,6 @@ tar xzf tmux-*.tar.gz
 cd tmux-*
 ./configure
 make && make install
-[[ ! -x $(command -v tmux) ]] && echo 'Fail to intsall tmux' && exit 1
+[[ ! -x "$(command -v tmux") ]] && echo 'Fail to intsall tmux' && exit 1
 rm -rf /tmp/tmux*
 echo 'Succeed to install tmux'
