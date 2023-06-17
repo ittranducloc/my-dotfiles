@@ -59,3 +59,8 @@ nnoremap <expr> <F1> empty(filter(getwininfo(), 'v:val.quickfix')) ? ':copen<CR>
 
 " Enable syntax highlight in markdown files
 let g:markdown_fenced_languages=['javascript', 'js=javascript', 'html', 'css', 'json=javascript', 'java', 'typescript', 'ts=typescript']
+
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-h> <c-w>h
+nnoremap <c-l> <c-w>l

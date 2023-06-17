@@ -53,7 +53,6 @@ set -g @plugin 'tmux-plugins/tmux-pain-control'
 set -g @plugin 'tmux-plugins/tmux-copycat'
 set -g @plugin 'tmux-plugins/tmux-open'
 set -g @plugin 'sainnhe/tmux-fzf'
-set -g @plugin 'darkknightbk52/vim-tmux-navigator'
 
 set -g @plugin 'tmux-plugins/tmux-yank'
 set -g @yank_selection_mouse 'clipboard'

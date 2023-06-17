@@ -78,10 +78,6 @@ repo = "https://github.com/junegunn/fzf.vim"
 merged = false
 
 [[custom_plugins]]
-repo = "https://github.com/christoomey/vim-tmux-navigator"
-merged = false
-
-[[custom_plugins]]
 repo = "https://github.com/haya14busa/incsearch.vim"
 merged = false
 
