@@ -21,4 +21,6 @@ asdf
 ruby
 rust
 kubectl
+tmux
+tmuxinator
 )

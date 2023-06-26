@@ -155,3 +155,5 @@ fi
 if [ -x "$(command -v minikube)" ]; then
     source <(minikube completion zsh)
 fi
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

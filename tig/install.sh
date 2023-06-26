@@ -1,7 +1,7 @@
 echo '=========Install tig'
 
 echo 'Install requirement'
-apt-get install -y make gcc libncurses-dev
+sudo apt-get install -y make gcc libncurses-dev
 CURRENT_DIR=$(pwd)
 cd /tmp
 VERSION=tig-2.5.8
