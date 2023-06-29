@@ -1,31 +1,38 @@
+#! /usr/bin/env bash
 echo "=========Install docker"
 
 # Setup the stable repository
-apt-get update
-apt-get intsall -y ca-certificates curl gnupg lsb-releases
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+sudo apt-get update
+sudo apt-get install ca-certificates curl gnupg
+sudo install -m 0755 -d /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+sudo chmod a+r /etc/apt/keyrings/docker.gpg
 echo \
-  "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
-  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+	"deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+  "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" |
+	sudo tee /etc/apt/sources.list.d/docker.list >/dev/null
 
 # Install
-apt-get update
-apt-get install -y docker-ce docker-ce-cli containerd.io
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+[ $? -ne 0 ] && echo "Failed to install docker" && exit 1
 
 echo ''
 echo 'The version installed'
 docker --version
+docker compose version
 
 # Post installation
-groupadd docker
-usermod -aG docker $USER
+echo "Add $USER to docker group"
+sudo groupadd docker
+sudo usermod -aG docker $USER
 newgrp docker
 
-echo ''
-echo 'Install docker-compose'
-[ ! -d ~/bin ] && mkdir ~/bin
-curl -Lo $HOME/bin/docker-compose https://github.com/docker/compose/releases/download/v2.16.0/docker-compose-linux-x86_64
-chmod +x $HOME/bin/docker-compose
-echo ''
-echo 'The version installed'
-docker-compose --version
+echo "Check KVM support"
+sudo apt install -y cpu-checker
+kvm-ok
+echo "Check KVM enabled"
+lsmod | grep kvm
+echo "Add $USER to kvm group"
+sudo usermod -aG kvm $USER
+echo "Logout and login again to group membership re-evaluated"
