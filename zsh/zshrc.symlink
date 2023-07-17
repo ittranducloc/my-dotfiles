@@ -157,3 +157,5 @@ if [ -x "$(command -v minikube)" ]; then
 fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+source /home/loctd/.config/broot/launcher/bash/br
