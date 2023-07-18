@@ -7,7 +7,6 @@ fzf-zsh-completions
 fancy-ctrl-z
 common-aliases
 ubuntu
-z
 cp
 copypath
 command-not-found
