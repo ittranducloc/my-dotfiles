@@ -7,7 +7,7 @@ wait
 sudo apt-get update
 sudo apt-get install -y cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3
 cargo install --version=0.11.0 alacritty
-sudo -sf ~/.asdf/installs/rust/1.67.1/bin/alacritty /usr/bin/
+sudo ln -sf ~/.asdf/installs/rust/1.67.1/bin/alacritty /usr/bin/
 alacritty --version
 echo 'Setup Post Build'
 cd /tmp
