@@ -92,8 +92,8 @@ do
   source "$file"
 done
 
-# load everything but the path and completion files
-for file in ${${${config_files:#*/path.zsh}:#*/completion.zsh}:#*/source.zsh}
+# load everything but the path, alias and source files
+for file in ${${${config_files:#*/path.zsh}:#*/alias.zsh}:#*/source.zsh}
 do
   source "$file"
 done
@@ -103,12 +103,6 @@ fpath+=${ZDOTDIR:-~}/.zsh_functions
 # initialize autocomplete here, otherwise functions won't be loaded
 autoload -U compinit
 compinit
-
-# load every completion  after autocomplete loads 
-for file in ${(M)config_files:#*/completion.zsh}
-do
-  source "$file"
-done
 
 unset config_files
 
@@ -147,4 +141,13 @@ for file in ${(M)config_files:#*/source.zsh}
 do
   source "$file"
 done
+
+# load every alias
+for file in ${(M)config_files:#*/alias.zsh}
+do
+  source "$file"
+done
 unset config_files
+source ~/.fzf.zsh
+source /home/loctd/.config/broot/launcher/bash/br
+eval "$(zoxide init zsh)"
