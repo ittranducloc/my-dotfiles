@@ -3,6 +3,7 @@
 echo "=========Install Bypass Paywall Chrome Extension"
 cd /tmp
 wget https://gitlab.com/magnolia1234/bypass-paywalls-chrome-clean/-/archive/master/bypass-paywalls-chrome-clean-master.zip
+mv -f ~/bypass-paywalls-chrome-clean-master ~/bypass-paywalls-chrome-clean-master-backup
 unzip ./bypass-paywalls-chrome-clean-master.zip -d ~
 ls ~/bypass-paywalls-chrome-clean-master
 echo "Follow guidelines at https://gitlab.com/magnolia1234/bypass-paywalls-chrome-clean#load-unpacked-chrome-ms-edge-or-brave-all-desktop"
