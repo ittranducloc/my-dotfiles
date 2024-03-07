@@ -1,32 +1,50 @@
 // Place your key bindings in this file to override the defaults
 [
-    {
-        "key": "alt+h",
-        "command": "vim.remap",
-        "when": "inputFocus && vim.mode == 'Normal'",
-        "args": {
-            "after": ["g", "T"]
-        }
-    },
-    {
-        "key": "alt+l",
-        "command": "vim.remap",
-        "when": "inputFocus && vim.mode == 'Normal'",
-        "args": {
-            "after": ["g", "t"]
-        }
-    },
-    {
-        "key": "escape",
-        "command": "workbench.action.focusActiveEditorGroup",
-        "when": "!editorTextFocus && !terminalFocus"
-    },
-    {
-        "key": "f3",
-        "command": "workbench.action.toggleSidebarVisibility"
-    },
-    {
-        "key": "ctrl+b",
-        "command": "-workbench.action.toggleSidebarVisibility"
+  /*
+  {
+    "key": "alt+h",
+    "command": "vim.remap",
+    "when": "inputFocus && vim.mode == 'Normal'",
+    "args": {
+      "after": [
+        "g",
+        "T"
+      ]
     }
+  },
+  {
+    "key": "alt+l",
+    "command": "vim.remap",
+    "when": "inputFocus && vim.mode == 'Normal'",
+    "args": {
+      "after": [
+        "g",
+        "t"
+      ]
+    }
+  },
+  */
+  {
+    "key": "escape",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "!editorTextFocus && !terminalFocus"
+  },
+  {
+    "key": "f3",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "ctrl+b",
+    "command": "-workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "shift+enter",
+    "command": "extension.jumpy-word",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "Escape",
+    "command": "extension.jumpy-exit",
+    "when": "editorTextFocus && jumpy.isJumpyMode"
+  }
 ]

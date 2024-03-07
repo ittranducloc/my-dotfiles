@@ -1,88 +1,165 @@
 {
-    "vim.useSystemClipboard": true,
-    "vim.leader": ",",
-    "vim.camelCaseMotion.enable": true,
-    "vim.easymotion": true,
-    "vim.gdefault": true,
-    "vim.highlightedyank.enable": true,
-    "vim.hlsearch": true,
-    "vim.matchpairs": "(:),{:},[:],<:>",
-    "vim.shell": "/usr/bin/zsh",
-    "vim.smartRelativeLine": true,
-    "vim.insertModeKeyBindingsNonRecursive": [
-        {
-            "before": ["j", "j"],
-            "after": ["<Esc>"]
-        },
-        {
-            "before": ["j", "k"],
-            "after": ["<Esc>"]
-        }
-    ],
-    "vim.normalModeKeyBindingsNonRecursive": [
-        {
-            "before": ["<C-l>"],
-            "commands": [":nohl"]
-        },
-        {
-            "before": ["j"],
-            "after": ["g", "j"]
-        },
-        {
-            "before": ["k"],
-            "after": ["g", "k"]
-        },
-        {
-            "before": ["<leader>", "v"],
-            "after": ["V", "`", "]", "k"]
-        },
-        {
-            "before": ["<leader>", ";"],
-            "after": ["A", ";", "<Esc>", "^"]
-        },
-        {
-            "before": ["[", "<space>"],
-            "after": ["O", "<Esc>", "j"]
-        },
-        {
-            "before": ["]", "<space>"],
-            "after": ["o", "<Esc>", "k"]
-        },
-        {
-            "before": ["n"],
-            "after": ["n", "z", "z"]
-        },
-        {
-            "before": ["N"],
-            "after": ["N", "z", "z"]
-        },
-        {
-            "before": ["<space>", "'"],
-            "commands": ["workbench.action.terminal.toggleTerminal"]
-        }
-    ],
-    "vim.handleKeys": {
-        "<C-k>": false,
-        "<C-t>": false
-    },
-    "files.autoSave": "afterDelay",
-    "workbench.startupEditor": "none",
-    "workbench.editor.untitled.hint": "hidden",
-    "hediet.vscode-drawio.theme": "atlas",
-    "terminal.integrated.allowChords": false,
-    "terminal.integrated.commandsToSkipShell": [
-        "-workbench.action.quickOpen",
-        "-workbench.action.togglePanel"
-    ],
-    "java.configuration.runtimes": [
+  "vim.useSystemClipboard": true,
+  "vim.leader": ",",
+  "vim.camelCaseMotion.enable": true,
+  "vim.easymotion": true,
+  "vim.gdefault": true,
+  "vim.highlightedyank.enable": true,
+  "vim.hlsearch": true,
+  "vim.matchpairs": "(:),{:},[:],<:>",
+  "vim.shell": "/usr/bin/zsh",
+  "vim.smartRelativeLine": true,
+  /*
+  "vim.insertModeKeyBindingsNonRecursive": [
     {
-        "name": "JavaSE-17",
-        "path": "~/.jdks/openjdk-17.0.2",
-        "default": true
-    }
-    ],
-    "jest.autoRun": "off",
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
     },
+    {
+      "before": [
+        "j",
+        "k"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
+  */
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<C-l>"
+      ],
+      "commands": [
+        ":nohl"
+      ]
+    },
+    {
+      "before": [
+        "j"
+      ],
+      "after": [
+        "g",
+        "j"
+      ]
+    },
+    {
+      "before": [
+        "k"
+      ],
+      "after": [
+        "g",
+        "k"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "v"
+      ],
+      "after": [
+        "V",
+        "`",
+        "]",
+        "k"
+      ]
+    },
+    /*
+    {
+      "before": [
+        "<leader>",
+        ";"
+      ],
+      "after": [
+        "A",
+        ";",
+        "<Esc>",
+        "^"
+      ]
+    },
+    {
+      "before": [
+        "<space>",
+        "'"
+      ],
+      "commands": [
+        "workbench.action.terminal.toggleTerminal"
+      ]
+    },
+    */
+    {
+      "before": [
+        "[",
+        "<space>"
+      ],
+      "after": [
+        "O",
+        "<Esc>",
+        "j"
+      ]
+    },
+    {
+      "before": [
+        "]",
+        "<space>"
+      ],
+      "after": [
+        "o",
+        "<Esc>",
+        "k"
+      ]
+    },
+    {
+      "before": [
+        "n"
+      ],
+      "after": [
+        "n",
+        "z",
+        "z"
+      ]
+    },
+    {
+      "before": [
+        "N"
+      ],
+      "after": [
+        "N",
+        "z",
+        "z"
+      ]
+    }
+  ],
+  "vim.handleKeys": {
+    "<C-k>": false,
+    "<C-t>": false
+  },
+  "files.autoSave": "afterDelay",
+  "workbench.startupEditor": "none",
+  "hediet.vscode-drawio.theme": "atlas",
+  "terminal.integrated.allowChords": false,
+  "terminal.integrated.commandsToSkipShell": [
+    "-workbench.action.quickOpen",
+    "-workbench.action.togglePanel"
+  ],
+  "editor.wordWrap": "on",
+  "hediet.vscode-drawio.resizeImages": null,
+  "workbench.editor.empty.hint": "hidden",
+  "java.configuration.runtimes": [
+    {
+      "name": "JavaSE-17",
+      "path": "~/.jdks/openjdk-17.0.2",
+      "default": true
+    }
+  ],
+  "jest.autoRun": "off",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
