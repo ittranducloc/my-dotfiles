@@ -70,7 +70,34 @@
         "k"
       ]
     },
+    {
+      "before": [
+        "<leader>",
+        "s"
+      ],
+      "commands": [
+        "jumpy2.toggle"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "S"
+      ],
+      "commands": [
+        "jumpy2.toggleSelection"
+      ]
+    },
     /*
+    {
+      "before": [
+        "<leader>",
+        "s"
+      ],
+      "commands": [
+        "extension.aceJump.multiChar"
+      ]
+    },
     {
       "before": [
         "<leader>",
@@ -161,5 +188,6 @@
   "jest.autoRun": "off",
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "workbench.editor.enablePreview": false
 }

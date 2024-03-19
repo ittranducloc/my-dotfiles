@@ -56,5 +56,17 @@
     "key": "ctrl+w",
     "command": "-extension.vim_ctrl+w",
     "when": "editorTextFocus && vim.active && vim.use<C-w> && !inDebugRepl"
+  },
+  {
+    "key": "ctrl+f",
+    "command": "-extension.vim_ctrl+f",
+    "when": "editorTextFocus && vim.active && vim.use<C-f> && !inDebugRepl && vim.mode != 'Insert'"
+  },
+  {
+    "key": "ctrl+shift+g",
+    "command": "workbench.action.findInFiles",
+    "args": {
+      "filesToInclude": "./${relativeFileDirname}"
+    }
   }
 ]
