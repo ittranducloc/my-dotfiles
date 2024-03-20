@@ -1,7 +1,8 @@
 alias vi=nvim
-alias vo='nvim -O'
-alias vp='nvim -p'
-alias vs='nvim -S'
+alias vio='nvim -O'
+alias vip='nvim -p'
+alias vis='nvim -S'
+alias vic='nvim --clean'
 
 # https://github.com/nelstrom/modvim-code/blob/master/terminal/alias-nvim-nvr.sh
 # Prevent accidental nesting nvim instance inside terminal buffer
