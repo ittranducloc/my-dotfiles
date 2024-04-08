@@ -68,5 +68,13 @@
     "args": {
       "filesToInclude": "./${relativeFileDirname}"
     }
+  },
+  {
+    "key": "ctrl+w ctrl+c",
+    "command": "workbench.action.closeActiveEditor"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "-workbench.action.closeActiveEditor"
   }
 ]
