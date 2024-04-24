@@ -38,11 +38,6 @@
     "command": "-workbench.action.toggleSidebarVisibility"
   },
   {
-    "key": "shift+enter",
-    "command": "extension.jumpy-word",
-    "when": "editorTextFocus"
-  },
-  {
     "key": "Escape",
     "command": "extension.jumpy-exit",
     "when": "editorTextFocus && jumpy.isJumpyMode"
@@ -70,11 +65,15 @@
     }
   },
   {
-    "key": "ctrl+w ctrl+c",
+    "key": "ctrl+w c",
     "command": "workbench.action.closeActiveEditor"
   },
   {
     "key": "ctrl+w",
     "command": "-workbench.action.closeActiveEditor"
+  },
+  {
+    "key": "ctrl+w o",
+    "command": "workbench.action.closeOtherEditors"
   }
 ]

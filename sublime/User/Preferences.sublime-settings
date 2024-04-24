@@ -1,0 +1,10 @@
+{
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"index_files": true,
+	"color_scheme": "Mariana.sublime-color-scheme",
+	"folder_exclude_patterns": ["node_modules", ".yarn", ".vscode", "test-results", ".next", "storybook-static", ".turbo", "dist", ".git", ".github"],
+	"file_exclude_patterns": ["yarn.lock"],
+}
