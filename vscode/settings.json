@@ -189,5 +189,8 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.editor.enablePreview": false
+  "workbench.editor.enablePreview": false,
+  "editor.tabSize": 2,
+  "telemetry.telemetryLevel": "off",
+  "gitlens.telemetry.enabled": false
 }
