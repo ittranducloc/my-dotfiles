@@ -22,4 +22,5 @@ rust
 kubectl
 tmux
 tmuxinator
+direnv
 )
