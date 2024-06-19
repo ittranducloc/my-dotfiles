@@ -169,3 +169,12 @@ eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+if type brew &>/dev/null
+then
+  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+
+  autoload -Uz compinit
+  compinit
+fi
