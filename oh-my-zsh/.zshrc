@@ -178,3 +178,6 @@ then
   autoload -Uz compinit
   compinit
 fi
+
+# https://unix.stackexchange.com/questions/14895/duplicate-entries-in-path-a-problem#comment137380_14896
+export PATH=$(echo "$PATH" | awk -v RS=':' -v ORS=":" '!a[$1]++{if (NR > 1) printf ORS; printf $a[$1]}')
