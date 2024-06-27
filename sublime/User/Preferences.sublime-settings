@@ -5,6 +5,7 @@
 	],
 	"index_files": true,
 	"color_scheme": "Mariana.sublime-color-scheme",
-	"folder_exclude_patterns": ["node_modules", ".vscode", "test-results", ".next", "storybook-static", ".turbo", "dist", ".git"],
+	"folder_exclude_patterns": ["node_moduless", ".vscode", "test-results", ".next", "storybook-static", ".turbo", "dist", ".git"],
 	"file_exclude_patterns": ["yarn.lock"],
+	"font_size": 9,
 }
