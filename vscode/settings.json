@@ -192,5 +192,6 @@
   "workbench.editor.enablePreview": false,
   "editor.tabSize": 2,
   "telemetry.telemetryLevel": "off",
-  "gitlens.telemetry.enabled": false
+  "gitlens.telemetry.enabled": false,
+  "editor.fontSize": 12
 }
