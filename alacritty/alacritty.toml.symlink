@@ -1,0 +1,6 @@
+import = [
+    "/home/loctd/.config/alacritty/themes/themes/monokai_pro.toml"
+]
+
+[font]
+size = 10.0

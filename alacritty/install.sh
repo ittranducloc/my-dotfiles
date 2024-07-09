@@ -6,12 +6,12 @@ echo ''
 wait
 sudo apt-get update
 sudo apt-get install -y cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3
-cargo install --version=0.11.0 alacritty
-sudo ln -sf ~/.asdf/installs/rust/1.67.1/bin/alacritty /usr/bin/
+cargo install --version=0.13.2 alacritty
+sudo ln -sf ~/.asdf/installs/rust/1.79.0/bin/alacritty /usr/bin/
 alacritty --version
 echo 'Setup Post Build'
 cd /tmp
-curl -Lo alacritty https://github.com/alacritty/alacritty/archive/refs/tags/v0.11.0.tar.gz
+curl -Lo alacritty https://github.com/alacritty/alacritty/archive/refs/tags/v0.13.2.tar.gz
 tar zxvf alacritty
 cd ./alacritty-*
 sudo tic -xe alacritty,alacritty-direct extra/alacritty.info
