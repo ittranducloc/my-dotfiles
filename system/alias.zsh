@@ -13,4 +13,4 @@ alias nwrm="/usr/bin/ls -1Lct | head -n 1 | xargs -p rm"
 alias nwo="/usr/bin/ls -1Lct | head -n 1 | xargs -d '\n' xdg-open"
 alias gsa='git submodule add'
 alias o='xdg-open'
-alias python=python3
+# alias python=python3
