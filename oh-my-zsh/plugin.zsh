@@ -23,4 +23,5 @@ kubectl
 tmux
 tmuxinator
 direnv
+helm
 )
