@@ -15,7 +15,6 @@ git
 docker
 docker-compose
 zsh-docker-aliases
-ripgrep
 asdf
 ruby
 rust
